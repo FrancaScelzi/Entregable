@@ -2,7 +2,7 @@
 
 alert ("¡Bienvenidos a mi sitio!")
 
-//  En caso que no quiera avanzar
+//  Confirm de avance 
 let reply = confirm ("¿Estás seguro de querer avanzar?")
 
 if (reply == false) {
@@ -15,12 +15,14 @@ else {
     trueReply.innerHTML = "¡Que alegría que quieras seguir con tu visita por este maravilloso sitio!"
 }
 
+// Nombre del usurario 
 let name = prompt("¿Cuál es tu nombre?");
 console.log (name);
 
 let saludo = document.querySelector (".titulo");
 saludo.innerHTML = "Bienvenidx " + name; 
 
+// Edad del usuario
 let edad = prompt ("¿Qué edad tienes?");
 
 let acceso = document.querySelector ("body");
@@ -29,6 +31,7 @@ if (edad < 18 ) {
     acceso.style.display= "none"
 }
 
+// Modo oscuro
 let modoOscuro = confirm ("¿Desea utilizar el modo oscuro?")
 
 if (modoOscuro == true) {
